@@ -1,6 +1,5 @@
 package com.vs.project.payload;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,12 +7,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class AddressDTO {
+public class OrderRequestDTO {
     private Long addressId;
-    private String street;
-    private String buildingName;
-    private String city;
-    private String state;
-    private String country;
-    private String pincode;
+    private String paymentMethod;
+    private String pgName;
+    private String pgPaymentId;
+    private String pgStatus;
+    private String pgResponseMessage;
 }
